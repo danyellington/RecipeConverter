@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epicodus.recipeconverter.ui.MainActivity"
+    >
+
+
+    <Button
+        android:id="@+id/addRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/savedRecipes"
+
+        android:layout_marginBottom="16dp"
+        android:alpha="0.65"
+        android:background="@color/LightSkyBlue"
+        android:text="Add Recipe"
+        android:textColor="@color/colorTextIcons"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/savedRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="199dp"
+        android:alpha="0.65"
+        android:background="@color/LightSkyBlue"
+        android:text="My Saved Recipes"
+        android:textColor="@color/colorTextIcons"
+        android:visibility="visible" />
+
+</RelativeLayout>

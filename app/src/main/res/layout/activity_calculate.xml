@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epicodus.recipeconverter.ui.CalculateActivity"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <!--<Button-->
+            <!--android:id="@+id/addBtn"-->
+            <!--android:text="Add New Item"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="addItems"/>-->
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/calculateAmount"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="text"
+        android:textColor="@color/MidnightBlue"
+        android:textColorHint="@color/Indigo" />
+
+    <EditText
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Ingredient"
+        android:inputType="text"
+        android:textColor="@color/MidnightBlue"
+        android:textColorHint="@color/Indigo" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="servings"
+        android:inputType="text"
+        android:textColor="@color/MidnightBlue"
+        android:textColorHint="@color/Indigo" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.65"
+        android:background="@color/Indigo"
+        android:padding="10dp"
+        android:text="Calculate"
+        android:textColor="@color/colorTextIcons" />
+
+    <TextView
+        android:id="@+id/desired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="newServing" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radio_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:layout_alignBaseline="@+id/desired"
+        android:layout_alignBottom="@+id/desired"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/desired"
+        android:layout_toRightOf="@+id/desired"
+        android:onClick="onRadioButtonClicked"
+         />
+
+    <RadioButton
+        android:id="@+id/radio_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:layout_alignBaseline="@+id/desired"
+        android:layout_alignBottom="@+id/desired"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_toLeftOf="@+id/desired"
+        android:layout_toStartOf="@+id/desired"
+        android:onClick="onRadioButtonClicked"
+         />
+
+    </RadioGroup>
+
+</RelativeLayout>

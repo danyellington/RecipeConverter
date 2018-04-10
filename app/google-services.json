@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "515640561709",
+    "firebase_url": "https://recipe-5a786.firebaseio.com",
+    "project_id": "recipe-5a786",
+    "storage_bucket": "recipe-5a786.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515640561709:android:dd0258a1615a7763",
+        "android_client_info": {
+          "package_name": "com.epicodus.recipeconverter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515640561709-nvut4o1enlm4h551s4554gkb73sn9qgi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epicodus.recipeconverter",
+            "certificate_hash": "1192e3fd19d94bcd0c918e51694c2b42dcae3907"
+          }
+        },
+        {
+          "client_id": "515640561709-q8a75hkn778c5sq0p0l6hh2fm8ectpqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZaH9QxbfMQA_mO2573SUytj52rGiqohU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515640561709-q8a75hkn778c5sq0p0l6hh2fm8ectpqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
