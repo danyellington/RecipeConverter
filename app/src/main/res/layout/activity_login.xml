@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/page"
     android:layout_height="match_parent"
     tools:context="com.epicodus.recipeconverter.ui.LoginActivity"
 
@@ -24,7 +25,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="@color/WhiteSmoke"
-            android:textColorHint="@color/Indigo"
+            android:textColorHint="@color/DimGray"
             android:hint="Email" />
 
 
@@ -35,7 +36,7 @@
             android:ems="10"
             android:inputType="textPassword"
             android:textColor="@color/WhiteSmoke"
-            android:textColorHint="@color/Indigo"
+            android:textColorHint="@color/DimGray"
             android:hint="Password" />
 
         <Button
@@ -44,20 +45,20 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Log in"
-            android:background="@color/Indigo"
+            android:background="@color/DimGray"
             android:layout_marginTop="15dp"
             android:textColor="@color/colorTextIcons"
-            android:alpha="0.65" />
+            android:alpha="0.45" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/colorTextIcons"
+            android:textColor="@color/DimGray"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textAlignment="center"
-            android:text="Click Here to Create an Account to Save Your Locations"
+            android:text="Click Here to Create an Account and Save Your Recipes"
             android:id="@+id/registerTextView"
             android:layout_gravity="center_horizontal" />
 
@@ -66,11 +67,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="Login"
-        android:textColor="@color/WhiteSmoke"
+        android:textColor="@color/Black"
         android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_above="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
 </RelativeLayout>

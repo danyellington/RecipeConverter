@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.epicodus.recipeconverter.ui.AccountCreateActivity"
@@ -24,7 +25,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="@color/WhiteSmoke"
-            android:textColorHint="@color/Indigo"
+            android:textColorHint="@color/DimGray"
             android:hint="Name" />
 
         <EditText
@@ -34,7 +35,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="@color/WhiteSmoke"
-            android:textColorHint="@color/Indigo"
+            android:textColorHint="@color/DimGray"
             android:hint="Email" />
 
         <EditText
@@ -44,7 +45,7 @@
             android:ems="10"
             android:inputType="textPassword"
             android:textColor="@color/WhiteSmoke"
-            android:textColorHint="@color/Indigo"
+            android:textColorHint="@color/DimGray"
             android:hint="Password" />
 
         <EditText
@@ -57,7 +58,7 @@
             android:ems="10"
             android:inputType="textPassword"
             android:textColor="@color/WhiteSmoke"
-            android:textColorHint="@color/Indigo"
+            android:textColorHint="@color/DimGray"
             android:hint="Confirm Password" />
 
         <Button
@@ -66,16 +67,16 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Sign up"
-            android:background="@color/Indigo"
+            android:background="@color/DimGray"
             android:layout_marginTop="15dp"
             android:textColor="@color/colorTextIcons"
-            android:alpha="0.65" />
+            android:alpha="0.45" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/colorTextIcons"
+            android:textColor="@color/DimGray"
             android:textStyle="bold"
             android:textSize="15sp"
             android:text="Already have an account? Log in here!"
@@ -85,14 +86,15 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create Account"
-        android:textColor="@color/WhiteSmoke"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView4" />
+        android:layout_marginTop="12dp"
+        android:text="Create Account"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
