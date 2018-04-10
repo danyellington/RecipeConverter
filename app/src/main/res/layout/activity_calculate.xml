@@ -28,7 +28,7 @@
     </RelativeLayout>
 
     <EditText
-        android:id="@+id/calculateAmount"
+        android:id="@+id/quantity"
         android:layout_width="71dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout"
@@ -56,7 +56,7 @@
         android:textColorHint="@color/DimGray" />
 
     <EditText
-        android:id="@+id/quantity"
+        android:id="@+id/calculateAmount"
         android:layout_width="71dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -123,5 +123,15 @@
             android:text="Divide" />
 
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Notes/Instructions"
+        android:inputType="textMultiLine"/>
 
 </RelativeLayout>
