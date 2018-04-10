@@ -6,6 +6,7 @@ public class Recipe {
     private String ingredientType;
     private int quantity;
     private int ingredientAmount;
+    private String pushId;
 
 
 
@@ -13,6 +14,7 @@ public class Recipe {
         this.ingredientType = ingredientType;
         this.quantity = quantity;
         this.ingredientAmount = ingredientAmount;
+        this.pushId = pushId;
 
     }
 
@@ -26,5 +28,11 @@ public class Recipe {
 
     public int getIngredientAmount() {
        return this.ingredientAmount;
+    }
+
+    public String getPushId() { return pushId; }
+
+    public void setPushId(String pushId){
+        this.pushId = pushId;
     }
 }

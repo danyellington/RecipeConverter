@@ -31,13 +31,13 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/servings"
+        android:id="@+id/units"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/results"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/results"
-        android:layout_marginTop="14dp"
+        android:layout_above="@+id/quantity"
+        android:layout_alignEnd="@+id/quantity"
+        android:layout_alignRight="@+id/quantity"
+        android:layout_marginBottom="35dp"
         android:text="serving" />
 
     <TextView
@@ -50,6 +50,17 @@
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
         android:text="quantity" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        android:maxLines = "25"
+        android:scrollbars = "vertical"/>
 
 
     <!--<LinearLayout-->

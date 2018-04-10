@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -31,14 +35,14 @@
         android:id="@+id/quantity"
         android:layout_width="71dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/linearLayout"
+        android:layout_above="@+id/textView6"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="59dp"
-        android:layout_marginRight="59dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:ems="10"
         android:hint="amount"
-        android:inputType="text"
+        android:inputType="phone"
         android:textColor="@color/MidnightBlue"
         android:textColorHint="@color/DimGray" />
 
@@ -46,9 +50,10 @@
         android:id="@+id/calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/calculateAmount"
+        android:layout_marginTop="31dp"
         android:ems="10"
         android:hint="Ingredient"
         android:inputType="text"
@@ -59,79 +64,220 @@
         android:id="@+id/calculateAmount"
         android:layout_width="71dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/radioGroup"
-        android:layout_marginTop="24dp"
+        android:layout_alignBottom="@+id/divButton"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="servings"
-        android:inputType="text"
+        android:inputType="phone"
         android:textColor="@color/MidnightBlue"
         android:textColorHint="@color/DimGray" />
 
     <Button
         android:id="@+id/calculateButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="57dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/divButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:alpha="0.65"
         android:background="@color/DimGray"
         android:padding="10dp"
-        android:text="Calculate"
+        android:text="Multiply"
         android:textColor="@color/colorTextIcons" />
 
-    <TextView
-        android:id="@+id/desired"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/radioGroup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:text="newServing" />
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    <!--<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/radioGroup"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
 
-        <RadioButton
-            android:id="@+id/radio_multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/desired"
-            android:layout_alignBottom="@+id/desired"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_toEndOf="@+id/desired"
-            android:layout_toRightOf="@+id/desired"
-            android:onClick="onRadioButtonClicked"
-            android:text="Multiply" />
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_multiply"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/desired"-->
+            <!--android:layout_alignBottom="@+id/desired"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:layout_marginStart="18dp"-->
+            <!--android:layout_toEndOf="@+id/desired"-->
+            <!--android:layout_toRightOf="@+id/desired"-->
+            <!--android:onClick="onRadioButtonClicked"-->
+            <!--android:text="Multiply" />-->
 
-        <RadioButton
-            android:id="@+id/radio_divide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/desired"
-            android:layout_alignBottom="@+id/desired"
-            android:layout_marginEnd="23dp"
-            android:layout_marginRight="23dp"
-            android:layout_toLeftOf="@+id/desired"
-            android:layout_toStartOf="@+id/desired"
-            android:onClick="onRadioButtonClicked"
-            android:text="Divide" />
+        <!--<RadioButton-->
+            <!--android:id="@+id/radio_divide"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/desired"-->
+            <!--android:layout_alignBottom="@+id/desired"-->
+            <!--android:layout_marginEnd="23dp"-->
+            <!--android:layout_marginRight="23dp"-->
+            <!--android:layout_toLeftOf="@+id/desired"-->
+            <!--android:layout_toStartOf="@+id/desired"-->
+            <!--android:onClick="onRadioButtonClicked"-->
+            <!--android:text="Divide" />-->
 
-    </RadioGroup>
+    <!--</RadioGroup>-->
 
     <EditText
         android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="95sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView17"
+        android:inputType="textMultiLine"
+        android:maxLines = "25"
+        android:scrollbars = "vertical"
+        android:hint="Notes/Instructions" />
+
+    <Button
+        android:id="@+id/divButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/calculateButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.65"
+        android:background="@color/DimGray"
+        android:text="Divide"
+        android:textColor="@color/colorTextIcons"/>
+
+    <EditText
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calculateButton"
+        android:layout_alignRight="@+id/calculateButton"
+        android:layout_below="@+id/calculate"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignEnd="@+id/quantity"
+        android:layout_alignRight="@+id/quantity"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignTop="@+id/textView9"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/textView17"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignTop="@+id/textView15"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView20"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quantity"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:text="Notes/Instructions"
-        android:inputType="textMultiLine"/>
+        android:hint="units" />
 
 </RelativeLayout>
+</ScrollView>
