@@ -14,7 +14,8 @@
         android:layout_toEndOf="@+id/linearLayout2"
         android:layout_toRightOf="@+id/linearLayout2"
         android:layout_weight="1"
-        android:text="Save" />
+        android:text="Save"
+        tools:ignore="UnknownId" />
 
     <TextView
         android:id="@+id/results"
@@ -51,18 +52,25 @@
         android:layout_marginRight="71dp"
         android:text="quantity" />
 
-    <TextView
-        android:id="@+id/notes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="900px"
+        android:layout_height="200px"
         android:layout_above="@+id/save"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:text="TextView"
-        android:maxLines = "25"
-        android:scrollbars = "vertical"/>
+        android:layout_centerHorizontal="true">
 
 
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/save"
+            android:layout_centerHorizontal="true"
+            android:maxLines="25"
+            android:scrollbars="vertical"
+            android:text="TextView" />
+    </ScrollView>
     <!--<LinearLayout-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->

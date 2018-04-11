@@ -81,6 +81,8 @@ public class CalculateActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         }
 
 
