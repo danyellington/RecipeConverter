@@ -1,64 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.epicodus.recipeconverter.ui.ResultsActivity">
 
-    <Button
-        android:id="@+id/save"
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/blank"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/linearLayout2"
-        android:layout_toRightOf="@+id/linearLayout2"
-        android:layout_weight="1"
-        android:text="Save"
-        tools:ignore="UnknownId" />
+        android:layout_height="match_parent"
+        tools:context="com.epicodus.recipeconverter.ui.CalculateActivity"
+        >
 
-    <TextView
-        android:id="@+id/results"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="122dp"
-        android:text="ingredient"
-        android:textColor="@color/MidnightBlue"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/units"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/quantity"
-        android:layout_alignEnd="@+id/quantity"
-        android:layout_alignRight="@+id/quantity"
-        android:layout_marginBottom="35dp"
-        android:text="serving" />
 
     <TextView
         android:id="@+id/quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/results"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="71dp"
-        android:layout_marginRight="71dp"
-        android:text="quantity" />
+
+        android:layout_above="@+id/quantity2"
+        android:layout_alignLeft="@+id/quantity2"
+        android:layout_alignStart="@+id/quantity2"
+        android:layout_marginBottom="19dp"
+        android:hint="amount"
+        android:inputType="text"
+        android:textColor="@color/MidnightBlue"
+        android:textColorHint="@color/DimGray" />
+
+    <TextView
+        android:id="@+id/ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/units"
+        android:ems="10"
+        android:hint="Ingredient"
+        android:inputType="text"
+        android:textColor="@color/MidnightBlue"
+        android:textColorHint="@color/DimGray" />
 
 
     <ScrollView
         android:id="@+id/ScrollView01"
         android:layout_width="900px"
         android:layout_height="200px"
-        android:layout_above="@+id/save"
-        android:layout_centerHorizontal="true">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp">
 
 
         <TextView
@@ -67,15 +55,160 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/save"
             android:layout_centerHorizontal="true"
+            android:hint="Notes/Instructions"
             android:maxLines="25"
-            android:scrollbars="vertical"
-            android:text="TextView" />
+            android:scrollbars="vertical" />
     </ScrollView>
-    <!--<LinearLayout-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/linearLayout2">-->
 
-    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/quantity5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quantity4"
+        android:layout_alignStart="@+id/quantity4"
+        android:layout_centerVertical="true"
+        android:hint="amount" />
+
+    <TextView
+        android:id="@+id/quantity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quantity3"
+        android:layout_alignLeft="@+id/quantity3"
+        android:layout_alignStart="@+id/quantity3"
+        android:layout_marginBottom="27dp"
+        android:hint="amount" />
+
+
+    <TextView
+        android:id="@+id/quantity4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quantity5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:hint="amount" />
+
+
+    <TextView
+        android:id="@+id/quantity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quantity4"
+        android:layout_alignLeft="@+id/quantity4"
+        android:layout_alignStart="@+id/quantity4"
+        android:layout_marginBottom="28dp"
+        android:hint="amount" />
+
+
+    <TextView
+        android:id="@+id/quantity6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quantity5"
+        android:layout_alignStart="@+id/quantity5"
+        android:layout_below="@+id/quantity5"
+        android:layout_marginTop="19dp"
+        android:hint="amount" />
+
+    <TextView
+        android:id="@+id/quantity8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quantity7"
+        android:layout_alignStart="@+id/quantity7"
+        android:layout_below="@+id/quantity7"
+        android:layout_marginTop="18dp"
+        android:hint="amount" />
+
+    <TextView
+        android:id="@+id/quantity7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quantity6"
+        android:layout_alignStart="@+id/quantity6"
+        android:layout_below="@+id/quantity6"
+        android:layout_marginTop="21dp"
+        android:hint="amount" />
+
+        <TextView
+            android:id="@+id/units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/quantity"
+            android:layout_centerHorizontal="true"
+            android:hint="units" />
+
+    <TextView
+        android:id="@+id/ingredient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantity2"
+        android:layout_alignBottom="@+id/quantity2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantity3"
+        android:layout_alignBottom="@+id/quantity3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantity4"
+        android:layout_alignBottom="@+id/quantity4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ingredient4"
+        android:layout_alignRight="@+id/ingredient4"
+        android:layout_below="@+id/quantity4"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quantity6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantity7"
+        android:layout_alignBottom="@+id/quantity7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantity8"
+        android:layout_alignBottom="@+id/quantity8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="TextView" />
 
 </RelativeLayout>
