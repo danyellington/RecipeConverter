@@ -3,33 +3,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bookcover"
     tools:context="com.epicodus.recipeconverter.ui.MainActivity"
     >
 
-
-    <Button
-        android:id="@+id/addRecipe"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/savedRecipes"
-
-        android:layout_marginBottom="16dp"
-        android:alpha="0.65"
-        android:background="@color/LightSkyBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
         android:text="Add Recipe"
-        android:textColor="@color/colorTextIcons"
-        android:visibility="visible" />
+        android:textColor="@color/Black" />
 
-    <Button
-        android:id="@+id/savedRecipes"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/saved"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add"
+        android:layout_below="@+id/addRecipe"
+        android:layout_marginTop="33dp"
+        android:text="My Recipes" />
+
+    <ImageView
+        android:id="@+id/addRecipe"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:alpha="0.85"
+        android:maxHeight="10sp"
+        android:maxWidth="20sp"
+        android:src="@drawable/name"
+        android:text="Add Recipe" />
+
+    <ImageView
+        android:id="@+id/savedRecipes"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/addRecipe"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="199dp"
-        android:alpha="0.65"
-        android:background="@color/LightSkyBlue"
-        android:text="My Saved Recipes"
-        android:textColor="@color/colorTextIcons"
-        android:visibility="visible" />
+        android:layout_alignStart="@+id/addRecipe"
+        android:layout_marginBottom="108dp"
+        android:alpha="0.85"
+        android:maxHeight="10sp"
+        android:maxWidth="20sp"
+        android:src="@drawable/name"
+        android:text="My Saved Recipes" />
+
 
 </RelativeLayout>

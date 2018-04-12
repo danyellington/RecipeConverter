@@ -9,6 +9,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -18,8 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     @BindView(R.id.addRecipe)
-    Button mAddRecipe;
-    @BindView(R.id.savedRecipes) Button mSavedRecipes;
+    ImageView mAddRecipe;
+    @BindView(R.id.savedRecipes) ImageView mSavedRecipes;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -30,8 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-
+    ImageView Button = (ImageView) findViewById(R.id.addRecipe);
     mAddRecipe.setOnClickListener(this);
+    ImageView Button2 = (ImageView) findViewById(R.id.savedRecipes);
     mSavedRecipes.setOnClickListener(this);
 
     mAuth = FirebaseAuth.getInstance();
