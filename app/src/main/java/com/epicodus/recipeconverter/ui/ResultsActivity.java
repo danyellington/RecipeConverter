@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,16 +19,23 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class ResultsActivity extends AppCompatActivity {
     private int mPosition;
     private Recipe mRecipe;
     private ArrayList<Recipe> mRecipes;
+    @BindView(R.id.save)
+    ImageView mSave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
-
+        ButterKnife.bind(this);
+        ImageView Button = (ImageView) findViewById(R.id.save);
+        mSave.setOnClickListener((View.OnClickListener) this);
 
         TextView results = (TextView) findViewById(R.id.ingredient);
         TextView results2 = (TextView) findViewById(R.id.ingredient2);
@@ -53,7 +61,6 @@ public class ResultsActivity extends AppCompatActivity {
         TextView quantity8 = (TextView) findViewById(R.id.quantity8);
 
 
-
         Intent intent = getIntent();
         String str = intent.getStringExtra("ingredient");
         String str2 = intent.getStringExtra("ingredient2");
@@ -74,7 +81,6 @@ public class ResultsActivity extends AppCompatActivity {
         String strQ6 = intent.getStringExtra("quantity6");
         String strQ7 = intent.getStringExtra("quantity7");
         String strQ8 = intent.getStringExtra("quantity8");
-
 
 
         results.setText(str);
@@ -98,4 +104,9 @@ public class ResultsActivity extends AppCompatActivity {
         quantity8.setText(strQ8);
 
     }
+  
+
 }
+
+
+

@@ -225,4 +225,16 @@
         android:ems="10"
         android:text="TextView" />
 
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/units"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/quantity"
+        android:layout_toRightOf="@+id/quantity"
+        android:src="@drawable/pin"
+        android:text="Button" />
+
 </RelativeLayout>
