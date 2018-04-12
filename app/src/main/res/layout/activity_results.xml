@@ -14,11 +14,11 @@
         android:id="@+id/quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_above="@+id/quantity2"
         android:layout_alignLeft="@+id/quantity2"
         android:layout_alignStart="@+id/quantity2"
         android:layout_marginBottom="19dp"
+        android:textSize="16dp"
         android:hint="amount"
 
 
@@ -33,6 +33,7 @@
         android:layout_alignLeft="@+id/ingredient2"
         android:layout_alignStart="@+id/ingredient2"
         android:ems="10"
+        android:textSize="16dp"
         android:text="Ingredient"
 
          />
@@ -56,6 +57,7 @@
             android:layout_above="@+id/save"
             android:layout_centerHorizontal="true"
             android:hint="Notes/Instructions"
+            android:textSize="16dp"
             android:maxLines="25"
             android:scrollbars="vertical" />
     </ScrollView>
@@ -63,6 +65,7 @@
 
     <TextView
         android:id="@+id/quantity5"
+        android:textSize="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/quantity4"
@@ -78,6 +81,7 @@
         android:layout_alignLeft="@+id/quantity3"
         android:layout_alignStart="@+id/quantity3"
         android:layout_marginBottom="27dp"
+        android:textSize="16dp"
         android:hint="amount" />
 
 
@@ -91,6 +95,7 @@
         android:layout_marginStart="32dp"
         android:layout_toEndOf="@+id/ingredient4"
         android:layout_toRightOf="@+id/ingredient4"
+        android:textSize="16dp"
         android:hint="amount" />
 
 
@@ -102,6 +107,7 @@
         android:layout_alignLeft="@+id/quantity4"
         android:layout_alignStart="@+id/quantity4"
         android:layout_marginBottom="28dp"
+        android:textSize="16dp"
         android:hint="amount" />
 
 
@@ -113,6 +119,7 @@
         android:layout_alignStart="@+id/quantity5"
         android:layout_below="@+id/quantity5"
         android:layout_marginTop="18dp"
+        android:textSize="16dp"
         android:hint="amount" />
 
     <TextView
@@ -123,6 +130,7 @@
         android:layout_alignStart="@+id/quantity7"
         android:layout_below="@+id/quantity7"
         android:layout_marginTop="14dp"
+        android:textSize="16dp"
         android:hint="amount" />
 
     <TextView
@@ -133,6 +141,7 @@
         android:layout_alignStart="@+id/quantity6"
         android:layout_below="@+id/quantity6"
         android:layout_marginTop="19dp"
+        android:textSize="16dp"
         android:hint="amount" />
 
     <TextView
@@ -142,6 +151,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
+        android:textSize="16dp"
         android:text="units" />
 
     <TextView
@@ -154,6 +164,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="45dp"
+        android:textSize="16dp"
         android:text="TextView" />
 
     <TextView
@@ -166,6 +177,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="45dp"
         android:layout_alignParentStart="true"
+        android:textSize="16dp"
         android:text="TextView" />
 
     <TextView
@@ -178,6 +190,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="45dp"
+        android:textSize="16dp"
         android:text="TextView" />
 
     <TextView
@@ -189,6 +202,7 @@
         android:layout_alignRight="@+id/ingredient4"
         android:layout_below="@+id/quantity4"
         android:layout_marginLeft="45dp"
+        android:textSize="16dp"
         android:text="TextView" />
 
     <TextView
@@ -200,6 +214,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="45dp"
+        android:textSize="16dp"
         android:text="TextView" />
 
     <TextView
@@ -212,6 +227,7 @@
         android:layout_marginLeft="45dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:textSize="16dp"
         android:text="TextView" />
 
     <TextView
@@ -220,21 +236,20 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/quantity8"
         android:layout_alignBottom="@+id/quantity8"
-        android:layout_alignEnd="@+id/units"
-        android:layout_alignRight="@+id/units"
+        android:layout_alignLeft="@+id/ingredient7"
+        android:layout_alignStart="@+id/ingredient7"
         android:ems="10"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textSize="16dp" />
 
-    <ImageView
-        android:id="@+id/save"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/units"
-        android:layout_marginLeft="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_toEndOf="@+id/quantity"
-        android:layout_toRightOf="@+id/quantity"
-        android:src="@drawable/pin"
-        android:text="Button" />
+    <!--<ImageView-->
+        <!--android:id="@+id/save"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toEndOf="@+id/quantity"-->
+        <!--android:layout_toRightOf="@+id/quantity"-->
+        <!--android:src="@drawable/pin"-->
+        <!--android:text="Button" />-->
 
 </RelativeLayout>

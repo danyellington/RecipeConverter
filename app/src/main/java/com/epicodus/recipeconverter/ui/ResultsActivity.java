@@ -26,16 +26,16 @@ public class ResultsActivity extends AppCompatActivity {
     private int mPosition;
     private Recipe mRecipe;
     private ArrayList<Recipe> mRecipes;
-    @BindView(R.id.save)
-    ImageView mSave;
+//    @BindView(R.id.save)
+//    ImageView mSave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
         ButterKnife.bind(this);
-        ImageView Button = (ImageView) findViewById(R.id.save);
-        mSave.setOnClickListener((View.OnClickListener) this);
+//        ImageView Button = (ImageView) findViewById(R.id.save);
+//        mSave.setOnClickListener((View.OnClickListener) this);
 
         TextView results = (TextView) findViewById(R.id.ingredient);
         TextView results2 = (TextView) findViewById(R.id.ingredient2);
@@ -104,7 +104,7 @@ public class ResultsActivity extends AppCompatActivity {
         quantity8.setText(strQ8);
 
     }
-  
+
 
 }
 
