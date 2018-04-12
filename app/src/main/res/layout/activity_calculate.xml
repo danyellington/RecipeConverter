@@ -29,10 +29,11 @@
 
         <EditText
             android:id="@+id/ingredient"
+            android:ems="7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-
+            android:layout_marginLeft="25dp"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/calculateAmount"
             android:layout_marginTop="12dp"
@@ -93,11 +94,13 @@
 
         <EditText
             android:id="@+id/ingredient3"
+            android:ems="10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/ingredient2"
+            android:layout_marginLeft="25dp"
             android:hint="ingredient"
             android:inputType="text" />
 
@@ -133,7 +136,9 @@
 
         <EditText
             android:id="@+id/ingredient4"
+            android:ems="10"
             android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -154,8 +159,10 @@
 
         <EditText
             android:id="@+id/ingredient5"
+            android:ems="10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/ingredient4"
@@ -173,27 +180,32 @@
 
         <EditText
             android:id="@+id/ingredient6"
+            android:ems="10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/quantity6"
-            android:layout_alignEnd="@+id/ingredient7"
-            android:layout_alignRight="@+id/ingredient7"
+            android:layout_alignEnd="@+id/ingredient5"
+            android:layout_alignRight="@+id/ingredient5"
             android:layout_below="@+id/ingredient5"
+            android:layout_marginLeft="25dp"
             android:hint="ingredient" />
 
         <EditText
             android:id="@+id/ingredient7"
+            android:ems="10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/quantity7"
             android:layout_alignBottom="@+id/quantity7"
-            android:layout_alignEnd="@+id/calculateButton"
-            android:layout_alignRight="@+id/calculateButton"
+            android:layout_alignLeft="@+id/ingredient6"
+            android:layout_alignStart="@+id/ingredient6"
             android:hint="ingredient" />
 
         <EditText
             android:id="@+id/ingredient8"
+            android:ems="10"
             android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -231,7 +243,9 @@
 
         <EditText
             android:id="@+id/ingredient2"
+            android:ems="10"
             android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/quantity2"
             android:layout_alignBottom="@+id/quantity2"
