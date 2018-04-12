@@ -227,6 +227,16 @@ public class CalculateActivity extends AppCompatActivity {
 
 
     }
-
+//    @Override
+//    public void onClick(View v) {
+//        String edtval = edttxt.getText().toString().trim();
+//
+//        if(!edtval.equals("")){
+//            int val = Integer.parseInt(edtval);
+//            int finalval = val - 30;
+//
+//            textview.setText(finalval+"");
+//        }
+//    }
 }
 

@@ -24,7 +24,6 @@
             android:ems="10"
             android:hint="amount"
             android:inputType="phone"
-            android:textColor="@color/MidnightBlue"
             android:textColorHint="@color/DimGray" />
 
         <EditText
@@ -39,7 +38,6 @@
             android:layout_marginTop="12dp"
             android:hint="Ingredient"
             android:inputType="text"
-            android:textColor="@color/MidnightBlue"
             android:textColorHint="@color/DimGray" />
 
         <EditText
@@ -51,7 +49,6 @@
             android:ems="10"
             android:hint="#"
             android:inputType="phone"
-            android:textColor="@color/MidnightBlue"
             android:textColorHint="@color/DimGray" />
 
         <Button

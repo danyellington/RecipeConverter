@@ -44,10 +44,7 @@
         android:layout_width="900px"
         android:layout_height="350px"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp">
+        android:layout_centerHorizontal="true">
 
 
         <TextView
@@ -57,9 +54,9 @@
             android:layout_above="@+id/save"
             android:layout_centerHorizontal="true"
             android:hint="Notes/Instructions"
-            android:textSize="16dp"
             android:maxLines="25"
-            android:scrollbars="vertical" />
+            android:scrollbars="vertical"
+            android:textSize="16dp" />
     </ScrollView>
 
 

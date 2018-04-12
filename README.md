@@ -1,8 +1,8 @@
 # Recipe Converter
-Do you need to make enough pie for 600 people? Do you want a cookie, but don't want to make an entire batch cause if they're there you'll sure as hell eat them? This converter can adapt any recipe to your needs, large or small. 
+Do you need to make enough pie for 600 people? Do you want a cookie, but don't want to make an entire batch because if you do you'll  eat them all and immediately regret it? This converter can adapt any recipe to your needs, large or small. 
 #### By: Danyel Murray
 ### Description
-This application can save new versions of recipes divided or multiplied to desired servings.
+This application can create new versions of recipes divided or multiplied to desired servings.
 #### Dependencies/Set Up
 
 * Clone github repository https://github.com/danyellington/RecipeConverter.git
