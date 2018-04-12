@@ -33,7 +33,7 @@
         android:alpha="0.85"
         android:maxHeight="10sp"
         android:maxWidth="20sp"
-        android:src="@drawable/recipe"
+        android:src="@drawable/reverse"
         android:text="My Saved Recipes" />
 
 

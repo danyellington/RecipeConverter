@@ -49,7 +49,7 @@
             android:layout_alignBottom="@+id/divButton"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:hint="servings"
+            android:hint="#"
             android:inputType="phone"
             android:textColor="@color/MidnightBlue"
             android:textColorHint="@color/DimGray" />
